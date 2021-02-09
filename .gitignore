@@ -1,0 +1,11 @@
+.gradle
+possible-glowroot-bug.iml
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+/target/
+.vscode/
