@@ -1,7 +1,3 @@
-/*
- * Copyright (C)2019 by Hilti Corporation all rights reserved
- */
-
 package com.glowroot.possiblebug.mongochanges;
 
 import com.github.cloudyrock.mongock.ChangeLog;
@@ -17,7 +13,7 @@ import java.util.List;
 public class Change1 {
 
   @ChangeSet(id = "_id_1", order = "1", author = "Tanos")
-  public void createSensorTagBatteryCollection(final MongoTemplate template) {
+  public void performChange1(final MongoTemplate template) {
     final Query query = getQuery();
     final List<User> users = template.find(query, User.class);
     System.out.println("Number of users in DB " + users.size());
